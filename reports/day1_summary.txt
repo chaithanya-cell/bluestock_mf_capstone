@@ -1,0 +1,43 @@
+DAY 1 DATA INGESTION SUMMARY
+
+Project: Mutual Fund Analytics Capstone
+
+Datasets Loaded: 10
+Total Schemes: 40
+AMFI Code Validation:
+
+- Missing AMFI Codes: 0
+- All schemes in fund master are present in NAV history
+
+Duplicate Rows:
+No duplicate rows detected in the datasets checked
+
+Missing Values:
+
+- 04_monthly_sip_inflows.csv contains 12 missing values in yoy_growth_pct
+- All other datasets contain no missing values
+
+Datatype Issues:
+
+launch_date stored as string
+transaction_date stored as string
+portfolio_date stored as string
+date columns in NAV and benchmark datasets stored as string
+month columns stored as string
+
+Data Quality Status:
+
+No empty columns detected
+Dataset ready for cleaning and transformation
+
+API Integration:
+HDFC Top 100 NAV successfully fetched from mfapi.in
+Additional NAV data retrieved for SBI, ICICI, Nippon, Axis and Kotak schemes
+
+Day 1 summary:
+Project structure created
+Dependencies installed
+CSV datasets loaded
+Data quality review completed
+AMFI code validation completed
+Live NAV retrieval completed

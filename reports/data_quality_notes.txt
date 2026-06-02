@@ -1,0 +1,123 @@
+DATA QUALITY NOTES
+1.Observations regarding CSV files
+
+01_fund_master.csv
+
+Shape: (40,15)
+Missing Values: None
+No Duplicate row detected.
+Issue:
+- launch_date stored as string/object datatype
+- risk_category is categorical text
+
+02_nav_history.csv
+
+Shape: (46000,3)
+Missing Values: None
+No Duplicate row detected.
+Issue:
+- date column stored as string/object datatype
+- should be converted to datetime during cleaning
+
+03_aum_by_fund_house.csv
+
+Shape: (90,5)
+Missing Values: None
+Issue:
+- date column stored as string/object datatype
+- aum_lakh_crore and aum_crore numeric and valid
+
+04_monthly_sip_inflows.csv
+
+Shape: (48, 6)
+Missing Values:
+yoy_growth_pct contains 12 missing values.
+All other columns have no missing values.
+
+Data Quality Observations:
+month column is stored as string/object datatype.
+Missing yoy_growth_pct values likely correspond to the first year where YoY comparison is unavailable.
+Numerical columns are correctly typed.
+No Duplicate row detected.
+
+05_category_inflows.csv
+
+Shape: (144, 3)
+Missing Values:
+No missing values detected.
+
+Data Quality Observations:
+month column is stored as string/object datatype.
+net_inflow_crore is correctly stored as float64.
+No empty columns detected.
+No Duplicate row detected.
+
+06_industry_folio_count.csv
+
+Shape: (21, 6)
+Missing Values:
+No missing values detected.
+
+Data Quality Observations:
+month column is stored as string/object datatype.
+Folio count columns are correctly stored as float64.
+No empty columns detected.
+No Duplicate row detected.
+
+07_scheme_performance.csv
+
+Shape: (40, 19)
+Missing Values:
+No missing values detected.
+
+Data Quality Observations:
+risk_grade is categorical text.
+Performance metrics such as alpha, beta, Sharpe ratio, Sortino ratio and returns are correctly stored as numeric values.
+No empty columns detected.
+No Duplicate row detected.
+
+08_investor_transactions.csv
+
+Shape: (32778, 13)
+Missing Values:
+No missing values detected.
+
+Data Quality Observations:
+transaction_date is stored as string/object datatype and should be converted to datetime.
+investor_id is stored as string.
+annual_income_lakh is correctly stored as float64.
+No empty columns detected.
+No Duplicate row detected.
+
+09_portfolio_holdings.csv
+
+Shape: (322, 8)
+Missing Values:
+No missing values detected.
+
+Data Quality Observations:
+portfolio_date is stored as string/object datatype and should be converted to datetime.
+weight_pct, market_value_cr and current_price_inr are correctly stored as float64.
+No empty columns detected.
+No Duplicate row detected.
+
+10_benchmark_indices.csv
+
+Shape: (8050, 3)
+Missing Values:
+No missing values detected.
+
+Data Quality Observations:
+date column is stored as string/object datatype and should be converted to datetime.
+close_value is correctly stored as float64.
+No empty columns detected.
+No Duplicate row detected.
+
+
+2.AMFI Code Validation
+
+Total Fund Master Schemes: 40
+Missing Codes: 0
+
+Result:
+All AMFI codes present in fund_master.csv exist in nav_history.csv.

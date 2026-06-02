@@ -1,0 +1,24 @@
+Fund Master Analysis
+
+Fund Houses:
+- SBI Mutual Fund
+- ICICI Prudential Mutual Fund
+- Axis Mutual Fund
+- Nippon India Mutual Fund
+- Kotak Mahindra Mutual Fund
+- Aditya Birla Sun Life Mutual Fund
+- Mirae Asset Mutual Fund
+- HDFC Mutual Fund
+- UTI Mutual Fund
+- DSP Mutual Fund
+
+Categories:
+- Equity
+- Debt
+
+Risk Categories:
+- Low
+- Moderate
+- Very High
+- High
+- Moderately High
