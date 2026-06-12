@@ -1,3 +1,9 @@
+#(Mutual Fund Recommendation Engine
+
+#This script recommends the top mutual fund schemes based on the user's selected risk appetite.
+
+#The recommendation is generated using Sharpe Ratio rankings within the selected risk category.
+
 import pandas as pd
 
 # Load data
